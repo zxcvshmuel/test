@@ -1,0 +1,45 @@
+.previewImage {
+  max-height: 100% !important;
+  max-width: 100%;
+}
+.pointer:hover {
+  filter: invert(20%);
+}
+
+#divCon {
+  height: 500px;
+}
+
+@media print {
+  @page {
+    size: 8in 6in !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  * {
+    margin: 0 !important;
+  }
+
+  #divCon {
+    height: 100vh !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin:0 !important;
+  }
+  #previewBar {
+    display: none !important;
+  }
+  #printBtn {
+    display: none !important;
+  }
+  .backBtn {
+    display: none !important;
+  }
+  #strips {
+    display: none !important;
+  }
+}
+
+.collagerRow {
+  overflow-x: auto;
+}
